@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+
+html {
+    font-size: 62.5%; /* 10px = 1rem */
+    scroll-behavior: smooth; // плавная прокрутка
+  }
+
+body{
+    font-family: Inter, Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: $base-color;
+}
+
+h1{
+    color: $grey;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+
+    @media only screen and (max-width: 768px)  {
+        font-size: 3.5rem;
+    }
+}
+
+h2{
+    color: $green;
+    font-family: Inika, serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5.2rem;
+}
+
+h3{
+    color: $orange;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.black-title{
+    color: #000;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-family: Inter;
+}
+
+.nav{
+    font-family: Inika, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 5rem;
+    color: $nav;
+}
+
+.logo-text{
+    font-family: Inika, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: $nav;
+}
+
+a{
+    transition: 0.3s;
+}

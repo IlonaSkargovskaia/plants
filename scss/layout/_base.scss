@@ -1,0 +1,13 @@
+.container{
+    max-width: 124.2rem;
+    padding: 0 1rem;
+    @include middle-auto;
+
+    @media only screen and (max-width: 768px)  {
+        max-width: 68.8rem;
+    }
+
+    @media only screen and (max-width: 380px)  {
+        max-width: 35rem;
+    }
+}

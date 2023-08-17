@@ -1,0 +1,48 @@
+.header{
+    background-color: $bg-green;
+
+    &.active{
+        background-color: #fff;
+        
+    }
+    @media only screen and (max-width: 680px)  {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    
+
+    & .header__row{
+        display: flex;
+        justify-content: space-between;
+        padding: 4.2rem 0;
+
+        @media only screen and (max-width: 768px)  {
+            padding: 3.5rem 0 ;
+        }
+
+    }    
+
+    & .logo{
+        background-image: url(../assets/icons/logo_vector.svg);
+        background-repeat: no-repeat;
+        padding-left: 2rem;
+        margin-top: 0.9rem;
+
+        & .logo__text{            
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: Inika;
+            color: #000;
+        }
+
+        @media only screen and (max-width: 680px)  {
+            padding-left: 2.2rem;
+            margin-top: 0rem;
+            
+        }
+        
+    }
+}
+

@@ -1,0 +1,80 @@
+
+
+
+.footer__row{
+    @include flex-between;
+    padding: 5.1rem 0;
+
+    & .footer__copyrights {
+
+        & .git{
+            display: inline-block;
+            margin-left: 1.3rem;
+            color: $base-color;
+
+            &:hover{
+                color: $orange;
+            }
+        }
+
+        & span{
+            display: inline-block;
+            margin-left: 1.6rem;
+        }
+    }
+    
+    & .footer__rss{
+        margin-left: 1rem;
+
+        & a{
+            color: $base-color;
+            &:hover{
+                color: $orange;
+            }
+        }
+        
+    }    
+
+    & .social__list{
+        display: flex;
+        column-gap: 2rem;
+
+        & a svg{
+            transition: fill 0.3s linear;
+        }
+            
+        & a:hover svg{
+            fill: $orange;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px)  {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 0;
+
+        & .footer__copyrights {
+            margin-bottom: 1rem;
+        }
+
+        & .footer__rss{
+            margin-left: 0;
+        }
+
+        & .footer__social{
+            margin: auto;
+            margin-top: 2.4rem;
+        }
+    }
+
+    @media only screen and (max-width: 380px)  {
+        
+            padding: 2rem 0;
+
+            & .footer__social{
+                margin-top: 0.7rem;
+            }
+        
+    }
+}

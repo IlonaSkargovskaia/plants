@@ -1,0 +1,12 @@
+@mixin middle-auto() {
+    margin: 0 auto;
+}
+
+@mixin flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+
+
